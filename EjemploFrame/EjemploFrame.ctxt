@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=EjemploFrame
+comment1.params=
+comment1.target=EjemploFrame()
+comment2.params=
+comment2.target=void\ inicializarCartas()
+comment3.params=g
+comment3.target=void\ dibujarCartas(java.awt.Graphics)
+comment4.params=
+comment4.target=void\ inicializarFondo()
+comment5.params=args
+comment5.target=void\ main(java.lang.String[])
+comment6.params=g
+comment6.target=void\ paint(java.awt.Graphics)
+numComments=7
