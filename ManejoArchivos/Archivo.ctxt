@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Archivo
+comment1.params=nombArch
+comment1.target=Archivo(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment3.params=ultima
+comment3.target=void\ guardarstring(java.lang.String)
+comment4.params=lineas
+comment4.target=void\ guardararreglo(java.lang.String[])
+numComments=5
