@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ArbolG
+comment1.params=
+comment1.target=ArbolG()
+comment2.params=p\ n
+comment2.target=void\ ingresar(NodoG,\ NodoG)
+comment3.params=codigo
+comment3.target=NodoG\ traer(int)
+comment4.params=p\ codigo
+comment4.target=void\ recorrido(NodoG,\ int)
+comment5.params=
+comment5.target=java.lang.String\ inorden()
+numComments=6
