@@ -2,6 +2,8 @@ public class ArbolG
 {
     NodoG raiz;
     NodoG bus;
+    String msg;
+    //Cola c;
     ArbolG()
     {
         raiz=null;
@@ -9,7 +11,7 @@ public class ArbolG
     void ingresar(NodoG p, NodoG n)
     {
         if(p==null)raiz=n;
-        else if(p.hijo==null)p.hijo=n;
+        else if(p.hijo==null)p.hijo=n;//hijo
         else 
         {
             NodoG tmp=p.hijo;
@@ -17,16 +19,17 @@ public class ArbolG
             {
                 tmp=tmp.her;
             }
-            tmp.her=n;
+            tmp.her=n;//her
         }
     }
+//=============================================================================
     NodoG traer(int codigo)
     {
         bus=null;
         recorrido(raiz,codigo);
         return bus;
     }
-    void recorrido(NodoG p, int codigo)
+    private void recorrido(NodoG p, int codigo)
     {
         if(bus!=null)return ;
         if(p!=null)
@@ -39,12 +42,26 @@ public class ArbolG
             if(tmp.codigo==codigo)bus=tmp;
             else recorrido(tmp,codigo);
             tmp=tmp.her;
-        }
-        
+        }   
     }
-    String inorden()
+//===================================================================================
+    void inorden()
     {
-        return null;
+        msg="Informacion Inorden del Arbol\n";
+        //c=new Cola();
+        inorden(raiz);
     }
-        
+    private void inorden(NodoG p)
+    {
+        msg+=p.toString()+"\n";
+        //c.encolar(new NodC(p.codigo,p.nombre));
+        NodoG tmp=p.hijo;
+        while(tmp!=null)
+        {
+            //javax.swing.JOptionPane.showMessageDialog(null,p.toString());
+            inorden(tmp);
+            tmp=tmp.her;
+        }
+    }
+//====================================================================================
 }
