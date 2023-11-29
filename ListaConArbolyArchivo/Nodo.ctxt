@@ -1,9 +1,13 @@
 #BlueJ class context
 comment0.target=Nodo
-comment1.params=n\ no
-comment1.target=Nodo(int,\ java.lang.String)
-comment2.params=
-comment2.target=Nodo()
+comment1.params=li
+comment1.target=Nodo(java.lang.String)
+comment2.params=n\ no
+comment2.target=Nodo(int,\ java.lang.String)
 comment3.params=
-comment3.target=java.lang.String\ toString()
-numComments=4
+comment3.target=Nodo()
+comment4.params=
+comment4.target=java.lang.String\ toString()
+comment5.params=otro
+comment5.target=boolean\ equals(Nodo)
+numComments=6

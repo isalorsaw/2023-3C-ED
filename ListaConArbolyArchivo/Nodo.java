@@ -7,6 +7,12 @@ public class Nodo
     Nodo sig;
     
     //Constructor
+    public Nodo(String li)
+    {
+         String interno[]=li.split(";");
+         num=Integer.parseInt(interno[0]);
+         nombre=interno[1];
+    }
     public Nodo(int n,String no)
     {
         num=n;
@@ -25,5 +31,9 @@ public class Nodo
     public String toString()
     {
         return num+" "+nombre;
+    }
+    public boolean equals(Nodo otro)
+    {
+        return num==otro.num;
     }
 }

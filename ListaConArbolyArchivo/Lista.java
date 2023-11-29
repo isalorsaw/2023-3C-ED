@@ -40,6 +40,12 @@ public class Lista
     }
     public Nodo buscar(Nodo n)
     {
+        Nodo tmp=prim;
+        while(tmp!=null)
+        {
+            if(tmp.equals(n))return tmp;
+            tmp=tmp.sig;
+        }
         return null;
     }
 }

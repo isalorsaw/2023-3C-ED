@@ -34,11 +34,13 @@ public class ArbolG
         if(bus!=null)return ;
         if(p!=null)
         {
+            //javax.swing.JOptionPane.showMessageDialog(null,"Primero "+p.toString());
             if(p.codigo==codigo)bus=p;
         }
         NodoG tmp=p.hijo;
         while(tmp!=null)
         {
+            javax.swing.JOptionPane.showMessageDialog(null,tmp.toString());
             if(tmp.codigo==codigo)bus=tmp;
             else recorrido(tmp,codigo);
             tmp=tmp.her;
